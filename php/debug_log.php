@@ -22,6 +22,8 @@ function debugLog(){
 
 	file_put_contents($logFile, $logText, FILE_APPEND);     //FILE_APPEND⇒上書きではなく追記
 
+	chmod($logFile, 0777);
+
 }
 
 ?>
